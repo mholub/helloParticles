@@ -65,9 +65,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
-   <BOUNDS type="Node" left="5925" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="6060" top="375" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5925" top="1500" width="795" height="240">
+   <BOUNDS type="Box" left="6060" top="375" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
@@ -385,14 +385,18 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="127">
-   <BOUNDS type="Node" left="5925" top="2460" width="100" height="100">
+   <BOUNDS type="Node" left="6060" top="1335" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="ParticlesCount">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="127" dstpinname="Input Value">
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="127" dstpinname="Input Value" linkstyle="VHV">
+   <LINKPOINT x="6090" y="975">
+   </LINKPOINT>
+   <LINKPOINT x="6090" y="975">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="128">
    <BOUNDS type="Node" left="5445" top="4170" width="100" height="100">
@@ -543,7 +547,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="147">
-   <BOUNDS type="Node" left="9915" top="6150" width="100" height="100">
+   <BOUNDS type="Node" left="9915" top="6240" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" slicecount="1" values="123">
    </PIN>
@@ -553,9 +557,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="46" dstpinname="Random Seed" linkstyle="VHV">
-   <LINKPOINT x="9765" y="6588">
+   <LINKPOINT x="9765" y="6648">
    </LINKPOINT>
-   <LINKPOINT x="10125" y="6463">
+   <LINKPOINT x="10125" y="6493">
    </LINKPOINT>
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="148">
@@ -593,7 +597,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="152">
-   <BOUNDS type="Node" left="10320" top="4590" width="100" height="100">
+   <BOUNDS type="Node" left="10320" top="4740" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="Seed">
    </PIN>
@@ -603,9 +607,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="151" srcpinname="Output" dstnodeid="152" dstpinname="Input Value" linkstyle="VHV">
-   <LINKPOINT x="10345" y="4483">
+   <LINKPOINT x="10350" y="4485">
    </LINKPOINT>
-   <LINKPOINT x="10340" y="4488">
+   <LINKPOINT x="10350" y="4485">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="141" srcpinname="Input Value" dstnodeid="60" dstpinname="Random Seed" linkstyle="VHV">
@@ -615,9 +619,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="141" srcpinname="Input Value" dstnodeid="147" dstpinname="Input 1" linkstyle="VHV">
-   <LINKPOINT x="8655" y="6150">
+   <LINKPOINT x="8655" y="6180">
    </LINKPOINT>
-   <LINKPOINT x="9945" y="6045">
+   <LINKPOINT x="9945" y="6105">
    </LINKPOINT>
    </LINK>
    <NODE systemname="IntegrateParticles (DX11.Effect)" filename="dx11\IntegrateParticles.fx" nodename="IntegrateParticles (DX11.Effect)" componentmode="Hidden" id="154">
@@ -809,11 +813,11 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (System Window)" componentmode="Hidden" id="166">
-   <BOUNDS type="Node" left="8145" top="1335" width="100" height="100">
+   <BOUNDS type="Node" left="8340" top="720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Right Button" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="8145" top="1335">
+   <BOUNDS type="Box" left="8340" top="720">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="167" systemname="IOBox (String)">
@@ -887,7 +891,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="171">
-   <BOUNDS type="Node" left="9810" top="1335" width="100" height="100">
+   <BOUNDS type="Node" left="10170" top="720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -942,25 +946,49 @@
    </NODE>
    <LINK srcnodeid="174" srcpinname="Output 1" dstnodeid="175" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="74" srcpinname="Down Edge" dstnodeid="151" dstpinname="Up">
+   <LINK srcnodeid="74" srcpinname="Down Edge" dstnodeid="151" dstpinname="Up" linkstyle="VHV">
+   <LINKPOINT x="9840" y="3953">
+   </LINKPOINT>
+   <LINKPOINT x="10320" y="3953">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="171" srcpinname="Bang" dstnodeid="170" dstpinname="Input 3">
+   <LINK srcnodeid="171" srcpinname="Bang" dstnodeid="170" dstpinname="Input 3" linkstyle="VHV">
+   <LINKPOINT x="10170" y="1500">
+   </LINKPOINT>
+   <LINKPOINT x="9555" y="1500">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="166" srcpinname="Right Button" dstnodeid="170" dstpinname="Input 2">
+   <LINK srcnodeid="166" srcpinname="Right Button" dstnodeid="170" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="9345" y="1500">
+   </LINKPOINT>
+   <LINKPOINT x="9330" y="1500">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="176">
-   <BOUNDS type="Node" left="7140" top="2070" width="100" height="100">
+   <BOUNDS type="Node" left="7350" top="720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="OnChange" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="176" dstpinname="Input">
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="176" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="6120" y="653">
+   </LINKPOINT>
+   <LINKPOINT x="7350" y="653">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="176" srcpinname="OnChange" dstnodeid="170" dstpinname="Input 1">
+   <LINK srcnodeid="176" srcpinname="OnChange" dstnodeid="170" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="7410" y="1485">
+   </LINKPOINT>
+   <LINKPOINT x="9120" y="1485">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="74" srcpinname="Down Edge" dstnodeid="132" dstpinname="Input Value">
+   <LINK srcnodeid="74" srcpinname="Down Edge" dstnodeid="132" dstpinname="Input Value" linkstyle="VHV">
+   <LINKPOINT x="9765" y="4275">
+   </LINKPOINT>
+   <LINKPOINT x="9015" y="4275">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="177">
    <BOUNDS type="Node" left="8985" top="5385" width="100" height="100">
@@ -977,9 +1005,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="177" srcpinname="Input Value" dstnodeid="46" dstpinname="Spread Count" linkstyle="VHV">
-   <LINKPOINT x="9130" y="6050">
+   <LINKPOINT x="9015" y="5805">
    </LINKPOINT>
-   <LINKPOINT x="10190" y="6070">
+   <LINKPOINT x="10305" y="5805">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="179" systemname="IOBox (String)">
