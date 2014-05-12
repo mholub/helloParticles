@@ -14,9 +14,11 @@ cbuffer cbPerObj : register( b1 )
 };
 
 StructuredBuffer<float2> InitPositions;
+StructuredBuffer<float2> InitVelocities;
 
 struct Particle {
 	float4 P;
+	float4 V;
 };
 
 AppendStructuredBuffer<Particle> Output : BACKBUFFER;
@@ -27,6 +29,7 @@ void CS_Emit(uint3 ID : SV_DispatchThreadID) {
 	if ((int)ID.x < Count) {
 		Particle p;
 		p.P = float4(InitPositions[ID.x].x, InitPositions[ID.x].y, 0, 1);
+		p.V = float4(InitVelocities[ID.x].x, InitVelocities[ID.x].y, 0, 1);
 		Output.Append(p);
 	}
 }

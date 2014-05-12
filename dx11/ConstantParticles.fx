@@ -1,10 +1,11 @@
-//@author: vux
-//@help: template for standard shaders
+//@author: mholub
+//@help: Just way to visualize particles
 //@tags: template
 //@credits: 
 
 struct Particle {
 	float4 P;
+	float4 V;
 };
 
 StructuredBuffer<Particle> ps;
